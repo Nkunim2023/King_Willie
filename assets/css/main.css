@@ -533,7 +533,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff !important;
 			border-color: #ffffff !important;
-			color: #1b1f22;
+			color: #0873c5;
 			content: '\f00c';
 		}
 
@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/ne.gif");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1659,3 +1659,38 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		#Resume .resume-columns {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+			gap: 20px; /* Space between the columns */
+			margin-top: 20px;
+		}
+		/* Specific grid settings for education & certifications */
+		#Resume .education-certifications {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+			gap: 80px; /* Space between the columns */
+		}
+		
+		#Resume .column {
+			padding: 10px;
+		}
+		
+		#Resume p {
+			margin: 0 0 10px 0;
+		}
+		
+		#Resume .major {
+			margin-bottom: 20px;
+		}
+		#Resume ul {
+			list-style-type: disc; /* Use disc for bullet points */
+			margin-left: 20px; /* Add some margin to the left for better indentation */
+		}
+		
+		#Resume li {
+			margin-bottom: 10px; /* Add some space between list items */
+		}
+		
+		

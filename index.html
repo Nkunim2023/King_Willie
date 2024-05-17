@@ -24,30 +24,66 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<img src="images/wn1.png" alt="" width="120" height="120" style="width: 5.5rem; height: 5.5rem; border: solid 1px #ffffff; border-radius: 100%;">
-							
+							<img src="images/wn1.png" alt="" width="100" height="100" style="width: 5.5rem; height: 5.5rem; border: solid 1px #ffffff; border-radius: 100%;">
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>William Nkum</h1>
-								<p><strong>Data Analyst | Data Scientist | Business Analyst | Network & Cybersecurity</strong></p>
-									<p>Dedicated and results-driven analytics professional with over 10 years of experience spanning <br>
-									across multiple domains translating complex data into actionable insights, leveraging <br>enterprise BI tools,
-									and fostering stakeholder relationships to drive data-informed decision-making</br> 
-									
+								<h1 class="mb-4 mt-3">I'm <span style="color: rgb(78, 211, 78);">William Nkum</span></h1>
+								<p><strong id="typing-text">Data Analyst | Data Scientist | Business Analyst</strong></p>
+								<p>Dedicated and results-driven analytics professional with over 10 years of experience spanning <br>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#Resume">Resume</a></li>
 								<li><a href="#Portfolio">Portfolio</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
-					
 					</header>
+
+					<script>
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-text');
+					
+						// Create an array of typing text
+						const typingTexts = [
+							'Data Analyst | Data Scientist | Business Analyst',
+							// Add more text variations here if needed
+						];
+					
+						// Variable to store the current timeout ID
+						let typingAnimationTimeout;
+					
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+							// Clear the existing timeout if it exists
+							if (typingAnimationTimeout) {
+								clearTimeout(typingAnimationTimeout);
+							}
+					
+							// Clear the existing text content
+							typingAnimationElement.innerHTML = '';
+					
+							// Loop through each character and add it to the element
+							for (let i = 0; i < text.length; i++) {
+								typingAnimationTimeout = setTimeout(() => {
+									typingAnimationElement.innerHTML += text[i];
+								}, i * 200); // Increase the delay to slow down the typing animation
+							}
+					
+							// Once the animation is complete, reset and start over
+							typingAnimationTimeout = setTimeout(() => {
+								playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+							}, text.length * 200);
+						}
+					
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+					</script>
+
 
 				<!-- Main -->
 					<div id="main">
@@ -73,135 +109,213 @@
 									business growth through the realm of Data Science and Business Analytics. Let's connect and explore new horizons together!<p>
 									
 									<div style="text-align: right;">
-										<a href="#about">More About Me</a>
+										<a href="#Resume">Resume</a>
 									</div>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
+						<!-- Resume -->
+							<article id="Resume">
+								<h2 class="major">Resume</h2>
 								<span class="image main"><img src="images/willie.jpg" alt="" /></span>
-								<p>A results-driven professional with 9+ years of experience spanning Data Management, 
-									Network and System Administration, and Cybersecurity, seeking a fresh challenge 
-									in Data Science and Business Analytics. Possesses the ability to extract insights 
-									from intricate datasets, construct predictive models, and drive data-informed decision-making. 
-									Boasts a comprehensive grasp of IT infrastructure and security, underscored by a track record 
-									of delivering impactful solutions for optimizing business performance</p>
+								<p>A seasoned technology professional with over a decade of experience and a diverse background 
+									spanning Data Science, Data Analytics, Machine Learning, Network Security and System Administration. 
+									I have a passion for leveraging data to drive business growth and innovation, and a vision to 
+									empower organizations with data-driven decision-making</p>
 									
-									<p><strong>Technical Skills</strong></p>
-	 								Machine Learning: Supervised and unsupervised Models<br>
-    								Database Systems: SQL, Excel<br>
-							    	Reporting Tools: Tableau, Microsoft PowerBI, Tableau<br>
-   								 	Statistical methods: Hypothesis testing & confidence interval, Predictive Analysis<br>
-   								 	Python Libraries: Scikit-learn, Pandas, NumPy, Seaborn, Matplotlib, Pandas Profiling</p>
+									<h2 class="major" >Technical Skills</h2>
+									<div class="resume-columns">
+										<div class="column">
+											<p>Machine Learning<br>
+											Data Analysis<br>
+											Data Science<br>
+											</p>
+										</div>
+										<div class="column">
+											<p>SQL<br>
+												Python<br>
+												Statistical Modelling<br>
+												</p>
+										</div>
+										<div class="column">
+											<p>MS Excel<br>
+												Tableau<br>
+												MS Power BI<br>
+												</p>
+										</div>
+									</div>
 
-									<p><strong>Certifications</strong></p>
-									Oracle Cloud Infrastructure Certified Data Science Professional, Oracle University<br>
-									Google Data Analytics, Coursera<br>IBM Data Analyst, Coursera<br>
-									Microsoft Certified Solutions Expert (MCSE) Server Infrastructure<br>
-									Microsoft Certified Solutions Associate (MCSA) Windows Server<br>
-									CompTIA Security+ CE<br>Certified Professional Ethical Hacker C)PEH Mile2<br>
-									Cisco Certified Network Associates (CCNA)<br></p>
+									<h2 class="major">Projects</h2>
+									<p><strong>1.	Business 360 - Brick & mortar and e-commerce</strong></p>
+									<ul>
+										<li>Designed a multi-view dashboard in Power BI for 6 departments (sales, finance, supply chain, executive, marketing, and products) 
+											of AtliQ hardware to understand sales trends and facilitate data-driven decisions, which aimed to scale the business processes by 10%.</li>
+										<li>Imported 2 different data sources (MySQL, and Excel) with more than 1 million records and performed data modelling.</li>
+										<li>Optimized the report using DAX studio, which saved 30% of storage and improved performance by 10%.</li>
+									</ul>
+									<p><strong>2.	Business 360 - Brick & mortar and e-commerce</strong></p>
+									<ul>
+										<li>Designed a multi-view dashboard in Power BI for 6 departments (sales, finance, supply chain, executive, marketing, and products) 
+											of AtliQ hardware to understand sales trends and facilitate data-driven decisions, which aimed to scale the business processes by 10%.</li>
+										<li>Imported 2 different data sources (MySQL, and Excel) with more than 1 million records and performed data modelling.</li>
+										<li>Optimized the report using DAX studio, which saved 30% of storage and improved performance by 10%.</li>
+									</ul>
+									<p><strong>3.	Business 360 - Brick & mortar and e-commerce</strong></p>
+									<ul>
+										<li>Designed a multi-view dashboard in Power BI for 6 departments (sales, finance, supply chain, executive, marketing, and products) 
+											of AtliQ hardware to understand sales trends and facilitate data-driven decisions, which aimed to scale the business processes by 10%.</li>
+										<li>Imported 2 different data sources (MySQL, and Excel) with more than 1 million records and performed data modelling.</li>
+										<li>Optimized the report using DAX studio, which saved 30% of storage and improved performance by 10%.</li>
+									</ul>
+									<p><strong>4.	Business 360 - Brick & mortar and e-commerce</strong></p>
+									<ul>
+										<li>Designed a multi-view dashboard in Power BI for 6 departments (sales, finance, supply chain, executive, marketing, and products) 
+											of AtliQ hardware to understand sales trends and facilitate data-driven decisions, which aimed to scale the business processes by 10%.</li>
+										<li>Imported 2 different data sources (MySQL, and Excel) with more than 1 million records and performed data modelling.</li>
+										<li>Optimized the report using DAX studio, which saved 30% of storage and improved performance by 10%.</li>
+									</ul>
+
+									<h2 class="major">Professional Experience</h2>
+									<p><strong>1.	Head, Information Technology </strong></p>
+									<ul>
+										<li>Ascended from Network Administrator to IT Head, steering a five-member team and cross-functional initiatives to pinpoint and deploy cost-efficient tech solutions, amplifying operational efficiency by 40%.</li>
+										<li>Orchestrated the IT Department's operational and strategic planning, leading to the triumphant completion of five major projects and a 40% boost in departmental efficiency.</li>
+										<li>Revolutionized data visualization by integrating automated reporting dashboards, slashing manual data analysis efforts by 60% and fostering a culture of data-driven decision-making.</li>
+										<li>Developed and managed interactive dashboards using MS Power BI, delivering real-time business metrics that propelled a 30% rise in income and a 15% cut in operational expenses.</li>
+									</ul>
+									<p><strong>2.	Deputy Head, Technology & Projects </strong></p>
+									<ul>
+										<li>Engineered and refined advanced router and switch configurations, optimized network servers, and harnessed virtualization to enhance the firm's network efficiency by 20%.</li>
+										<li>Diagnosed and resolved hardware and software issues, instituting solutions that cut system outages by 15% and conserved approximately $50,000 annually by averting potential productivity losses.</li>
+									</ul>
+									<h2 class="major">Education & Certifications</h2>
+									<p><strong>Academic Qualifications </strong></p>
+										<ul>
+											<li>PGP in Data Science & Business Analytics | McCombs School of Business, University of Texas, USA.</li>
+											<li>Master Business Administration (MBA) | Accra Business School, Accra</li>
+											<li>BBA.  IT Security SMC University, Switzerland </li>
+										</ul>											
+										
+									<p><strong>Professional Qualification</strong></p>
+										<ul>
+											<li>PECB/ISO27001 Lead Implementer.</li>
+											<li>Oracle Cloud Infrastructure Certified Data Science Professional </li>
+											<li>Google Data Analytics  </li>
+											<li>IBM Data Analyst </li>
+											<li>Microsoft Certified Solutions Expert (MCSE) Server Infrastructure </li>
+											<li>CompTIA Security+ CE </li>
+											<li>Certified Professional Ethical Hacker C)PEH Mile2 </li>
+										</ul>											
+									
+
+									<p>In addition to my technical skills and certifications, I have a strong background 
+										in project management and leadership. Over the course of my career, I have led multiple 
+										teams to success, ensuring projects are completed on time and within budget. My ability to 
+										communicate effectively with stakeholders and team members has been key to my success 
+										in delivering high-quality results.</p>
 									
 									<div style="text-align: right;">
 									<a href="#Portfolio">My Portfolio</a>
 									</div>						
 							</article>
 
-
 						<!-- Portfolio -->						
 							<article id="Portfolio">
+								<h2 class="major">My Portfolio </h2>
 								<!-- Row 1 -->
-								<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-								<!-- Column 1 -->
-								<div style="width: 30%; text-align: justify;">
-									<!-- Project 1 -->
-									<h2 class="major">ReneWind</h2>
-									<span class="image main"><img src="https://camo.githubusercontent.com/78825522ca8a56760eb2fc55265407e62bb76f13e9658c90ad1ce7751261b7d1/68747470733a2f2f692e696d6775722e636f6d2f687379784b63372e6a7067" alt="" /></span>
-									<strong>A Project on Model Tuning<br></strong>
-									<br>"ReneWind" is a company working on improving the machinery/processes involved in the production of wind energy using machine learning and has collected data of generator failure of wind turbines using sensors. The objective is to build various classification models, tune them and find the best one that will help identify failures so that the generator could be repaired before failing/breaking and the overall maintenance cost of the generators can be brought down.</p>
-									<strong>Skills & Tools Covered</strong><br> Up and downsampling, Regularization, Hyperparameter tuning</p>
-									<div style="text-align: center;">
-									<a href="https://github.com/Nkunim2023/ReneWind" class="button scrolly">View Project</a>
+								<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+									<!-- Column 1 -->
+									<div style="width: 48%; text-align: justify; margin-bottom: 20px;">
+										<!-- Project 1 -->
+										<h2 class="major">Business Insight 360</h2>
+										<span class="image main"><img src="/images/BI360.png" alt="" /></span>
+										<strong>A Project on Model Tuning<br></strong>
+										<p>"ReneWind" is a company working on improving the machinery/processes involved in the production of wind energy using machine learning and has collected data of generator failure of wind turbines using sensors. The objective is to build various classification models, tune them and find the best one that will help identify failures so that the generator could be repaired before failing/breaking and the overall maintenance cost of the generators can be brought down.</p>
+										<strong>Skills & Tools Covered</strong><br> Up and downsampling, Regularization, Hyperparameter tuning</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/ReneWind" class="button scrolly">View Project</a>
+										</div>
+									</div>
+								
+									<!-- Column 2 -->
+									<div style="width: 48%; text-align: justify; margin-bottom: 20px;">
+										<!-- Project 2 -->
+										<h2 class="major">EasyVisa</h2>
+										<span class="image main"><img src="images/Sales.jpg" alt="" /></span>
+										<p><strong>A Project on Ensemble Techniques<br></strong><br>Analyze the data of Visa applicants, build a predictive model to facilitate the process of visa approvals, and based on important factors that significantly influence the Visa status recommend a suitable profile for the applicants for whom the visa should be certified or denied.</p>
+										<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Data Preprocessing, Customer Profiling, Bagging Classifiers (Bagging and Random Forest, Boosting Classifier (AdaBoost, Gradient Boosting, XGBoost) Stacking Classifier, Hyperparameter Tuning using GridSearchCV.</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/EasyVisa/" class="button scrolly">View Project</a>
+										</div>
 									</div>
 								</div>
-							
-								<!-- Column 2 -->
-								<div style="width: 30%; text-align: justify;">
-									<!-- Project 2 -->
-									<h2 class="major">EasyVisa</h2>
-									<span class="image main"><img src="https://camo.githubusercontent.com/e0c05b4ca1455f691894cde5bd1470e563bee2fdc630f058127c3f34631612f5/68747470733a2f2f692e696d6775722e636f6d2f6e6a5178426f4d2e6a7067" alt="" /></span>
-									<p><strong>A Project on Ensemble Techniques<br></strong><br>Analyze the data of Visa applicants, build a predictive model to facilitate the process of visa approvals, and based on important factors that significantly influence the Visa status recommend a suitable profile for the applicants for whom the visa should be certified or denied.</p>
-									<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Data Preprocessing, Customer Profiling, Bagging Classifiers (Bagging and Random Forest, Boosting Classifier (AdaBoost, Gradient Boosting, XGBoost) Stacking Classifier, Hyperparameter Tuning using GridSearchCV.</p>
-									<div style="text-align: center;">
-									<a href="https://github.com/Nkunim2023/EasyVisa/" class="button scrolly">View Project</a>
-									</div>
-								</div>
-							
-								<!-- Column 3 -->
-								<div style="width: 30%; text-align: justify;">
-									<!-- Project 3 -->
-									<h2 class="major">INN Hotels</h2>
-									<span class="image main"><img src="https://camo.githubusercontent.com/e5ec7154746f293523f908487474e23d2e6ffcd16bba2d26464ab4d680852eff/68747470733a2f2f692e696d6775722e636f6d2f627163493263422e6a7067" alt="" /></span>
-									<p><strong>Supervised Learning - Classification<br></strong><br>Analyze the data of INN Hotels to find which factors have a high influence on booking cancellations, build a predictive model that can predict which booking is going to be canceled in advance, and help in formulating profitable policies for cancellations and refunds.</p>
-									<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Data Pre-processing, Logistic regression, Multicollinearity, Finding optimal threshold using AUC-ROC curve, Decision trees, Pruning</p>
-									<div style="text-align: center;">
-									<a href="https://github.com/Nkunim2023/INN-Hotels" class="button scrolly">View Project</a>
-									</div>
-								</div>
-								</div>
-							
+								
 								<!-- Row 2 -->
-								<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-								<!-- Column 1 -->
-								<div style="width: 30%; text-align: justify;">
-									<!-- Project 4 -->
-									<h2 class="major">ReCell</h2>
-									<span class="image main"><img src="https://camo.githubusercontent.com/d347d1f107cff0e91d14ba137be793b80049094302b146bea63582e3aef9f0d8/68747470733a2f2f692e696d6775722e636f6d2f3550726a6b79622e706e67" alt="" /></span>
-									<p><strong>Supervised Learning - Foundations<br></strong><br>Analyze the used devices dataset, build a model which will help develop a dynamic pricing strategy for used and refurbished devices, and identify factors that significantly influence the price.</p>
-									<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Linear Regression, Linear Regression assumptions, Business insights and recommendations</p>
-									<div style="text-align: center;">
-									<a href="https://github.com/Nkunim2023/ReCell" class="button scrolly">View Project</a>
+								<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+									<!-- Column 1 -->
+									<div style="width: 48%; text-align: justify; margin-bottom: 20px;">
+										<!-- Project 3 -->
+										<h2 class="major">INN Hotels</h2>
+										<span class="image main"><img src="images/excel1.gif" alt="" /></span>
+										<p><strong>Supervised Learning - Classification<br></strong><br>Analyze the data of INN Hotels to find which factors have a high influence on booking cancellations, build a predictive model that can predict which booking is going to be canceled in advance, and help in formulating profitable policies for cancellations and refunds.</p>
+										<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Data Pre-processing, Logistic regression, Multicollinearity, Finding optimal threshold using AUC-ROC curve, Decision trees, Pruning</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/INN-Hotels" class="button scrolly">View Project</a>
+										</div>
+									</div>
+								
+									<!-- Column 2 -->
+									<div style="width: 48%; text-align: justify; margin-bottom: 20px;">
+										<!-- Project 4 -->
+										<h2 class="major">ReCell</h2>
+										<span class="image main"><img src="images/Excel.png" alt="" /></span>
+										<p><strong>Supervised Learning - Foundations<br></strong><br>Analyze the used devices dataset, build a model which will help develop a dynamic pricing strategy for used and refurbished devices, and identify factors that significantly influence the price.</p>
+										<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Linear Regression, Linear Regression assumptions, Business insights and recommendations</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/ReCell" class="button scrolly">View Project</a>
+										</div>
 									</div>
 								</div>
-							
-								<!-- Column 2 -->
-								<div style="width: 30%; text-align: justify;">
-									<!-- Project 5 -->
-									<h2 class="major">E-news Express</h2>
-									<span class="image main"><img src="https://camo.githubusercontent.com/d5b40a71336ebbf276a51cc87445c82252a8dc736c6c677b2e6af5266dfd8eaf/68747470733a2f2f692e696d6775722e636f6d2f39666e785643442e6a7067" alt="" /></span>
-									<p><strong>Business Statistics<br></strong><br>This project used statistical analysis, A/B testing, and visualization to decide whether the new landing page of an online news portal (E-news Express) is effective enough to gather new subscribers or not. The simulated dataset has certain important metrics such as converted status and time spent on the page that will help to conclude the effectiveness of the new landing page. Apart from that, the dependence of conversion on the preferred language will also be analyzed in this project.</p>
-									<strong>Skills & Tools Covered</strong><br>Hypothesis Testing, a/b testing, Data Visualization, Statistical Inference</p>
-									<div style="text-align: center;">
-									<a href="https://github.com/Nkunim2023/E-news-Express" class="button scrolly">View Project</a>
-									</div>
-								</div>
-							
-								<!-- Column 3 -->
-								<div style="width: 30%; text-align: justify;">
-									<!-- Project 6 -->
-									<h2 class="major">FoodHub Order </h2>
-									<span class="image main"><img src="https://camo.githubusercontent.com/2756be552c10265df2ba04c4ab9bce1100bf3e545d4e1da816f642d8a1bd05b7/68747470733a2f2f692e696d6775722e636f6d2f55746a6f4e386a2e6a7067" alt=""/></span>
-									<p><strong>Python - Foundations<br></strong><br>The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to draw some actionable insights for the business. Suppose you are hired as a Data Scientist in this company and the Data Science team has shared some of the key questions that need to be answered. Perform the data analysis to find answers to these questions that will help the company to improve the business.</p>
-									<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (Variable Identification, Univariate analysis, Bi-Variate analysis), Python</p>
-									<div style="text-align: center;">
-									<a href="https://github.com/Nkunim2023/FoodHub-Order-Analysis" class="button scrolly">View Project</a>
+
+								<!-- Row 3 -->
+								<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+									<!-- Column 1 -->
+									<div style="width: 48%; text-align: justify; margin-bottom: 20px;">
+										<!-- Project 5 -->
+										<h2 class="major">E-news Express</h2>
+										<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+										<p><strong>Business Statistics<br></strong><br>This project used statistical analysis, A/B testing, and visualization to decide whether the new landing page of an online news portal (E-news Express) is effective enough to gather new subscribers or not. The simulated dataset has certain important metrics such as converted status and time spent on the page that will help to conclude the effectiveness of the new landing page. Apart from that, the dependence of conversion on the preferred language will also be analyzed in this project.</p>
+										<strong>Skills & Tools Covered</strong><br>Hypothesis Testing, a/b testing, Data Visualization, Statistical Inference</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/E-news-Express" class="button scrolly">View Project</a>
+										</div>
 									</div>
 
-									<p>
+									<!-- Column 2 -->
+									<div style="width: 48%; text-align: justify; margin-bottom: 20px;">
+										<!-- Project 6 -->
+										<h2 class="major">FoodHub Order</h2>
+										<span class="image main"><img src="images/pic01.jpg" alt=""/></span>
+										<p><strong>Python - Foundations<br></strong><br>The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to draw some actionable insights for the business. Suppose you are hired as a Data Scientist in this company and the Data Science team has shared some of the key questions that need to be answered. Perform the data analysis to find answers to these questions that will help the company to improve the business.</p>
+										<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (Variable Identification, Univariate analysis, Bi-Variate analysis), Python</p>
 										<div style="text-align: center;">
-										<a href="#contact">Let's Connect!</a>
+											<a href="https://github.com/Nkunim2023/FoodHub-Order-Analysis" class="button scrolly">View Project</a>
 										</div>
 
-								</div>
+										<p>
+											<div style="text-align: center;">
+												<a href="#contact">Let's Connect!</a>
+											</div>
+										</p>
+									</div>
 								</div>
 							</article>
+
 			  
 						
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<span class="image main"><img src="https://media.licdn.com/dms/image/D4D16AQHN610AoPKNHw/profile-displaybackgroundimage-shrink_350_1400/0/1693440867405?e=1699488000&v=beta&t=aV0s6syP-eP_TrKZbodakTMxsTKbud4Wu0hw6IUFWTY" alt="" /></span>																
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>																
 									<h3>Please get in Touch</h3>
 										<p>I am open to working with you on the Data Science, Data Analyst and Business Intelligence project, discussing a possible career opportunity.</p>
 									<section class="alt">
