@@ -533,7 +533,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff !important;
 			border-color: #ffffff !important;
-			color: #0873c5;
+			color: #1b1f22;
 			content: '\f00c';
 		}
 
