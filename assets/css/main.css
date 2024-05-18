@@ -1773,6 +1773,20 @@ input, select, textarea {
 		.button.scrolly:hover {
 			background: #0d9757;
 		}
+
+		.button.scrol {
+			display: inline-block;
+			padding: 3px 20px;
+			border-radius: 5px;
+			background: #01030e;
+			color: #fff;
+			text-decoration: none;
+			transition: background 0.3s;
+		}
+		
+		.button.scrol:hover {
+			background: #4e0e81;
+		}
 		
 		
 		
