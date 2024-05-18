@@ -1319,7 +1319,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 2rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
@@ -1696,7 +1696,7 @@ input, select, textarea {
 		.card {
 			width: 30%;
 			text-align: justify;
-			border: 1px solid #ddd;
+			border: 1px solid #051fb3;
 			border-radius: 8px;
 			padding: 10px;
 			margin-bottom: 20px;
@@ -1721,6 +1721,59 @@ input, select, textarea {
 			margin-bottom: 10px;
 			font-size: 1.1em;
 		}
+
+		.card-wide {
+			width: 48%;
+			text-align: justify;
+			border: 1px solid #051fb3;
+			border-radius: 8px;
+			padding: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s;
+			background-color: #110d0d;
+		}
+		
+		.card-wide:hover {
+			transform: scale(1.05);
+		}
+		
+		.card-wide .image {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+		
+		.card-wide h2 {
+			margin-top: 0;
+		}
+		
+		.card-wide p {
+			margin: 10px 0;
+		}
+		
+		.card-wide strong {
+			display: block;
+			margin: 10px 0;
+			font-size: 1.1em;
+			text-align: center;
+		}
+		
+		.button.scrolly {
+			display: inline-block;
+			padding: 3px 20px;
+			border-radius: 5px;
+			background: #051fb3;
+			color: #fff;
+			text-decoration: none;
+			transition: background 0.3s;
+		}
+		
+		.button.scrolly:hover {
+			background: #0d9757;
+		}
+		
 		
 		
 		
