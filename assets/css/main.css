@@ -1692,5 +1692,35 @@ input, select, textarea {
 		#Resume li {
 			margin-bottom: 10px; /* Add some space between list items */
 		}
+
+		.card {
+			width: 30%;
+			text-align: justify;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			padding: 10px;
+			margin-bottom: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s;
+		}
+		
+		.card:hover {
+			transform: scale(1.05);
+		}
+		
+		.card .image {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+		
+		.card strong {
+			display: block;
+			text-align: center;
+			margin-bottom: 10px;
+			font-size: 1.1em;
+		}
+		
 		
 		
