@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>William Nkum</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600&display=swap" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- favicons ================================================== -->
+				<!--<link rel="icon" type="image/png" href="favicon.png"> -->				
+				<link rel="icon" href="images/will.png" type="images/will">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<img src="images/wn1.png" alt="" width="100" height="100" fetchpriority="high" decoding="async" style="width: 5.5rem; height: 5.5rem; border: solid 1px #ffffff; border-radius: 100%;">
+							
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 class="mb-4 mt-3">I'm <span style="color: rgb(78, 211, 78);">William Nkum (MBA, PMP®)</span></h1>
+								<p><strong id="typing-text" style="font-style: italic;">Information security | Project Management | Data nalyst</strong></p>
+								<p>"We are surrounded by data, but starved for insights” Welcome to my portfolio website!!! <br>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#About">About Me</a></li>
+								<li><a href="#Resume">My Resume</a></li>
+								<li><a href="#Portfolio">Portfolio</a></li>
+								<li><a href="#contact">Dashboard</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+					<!-- Element to contain animated typing -->
+					<span id="typing-text"></span>
+
+					<script>
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-text');
+					
+						// Create an array of typing text
+						const typingTexts = [
+							'Information security | project management | data analyst',
+							// Add more text variations here if needed
+						];
+					
+						// Variable to store the current timeout ID
+						let typingAnimationTimeout;
+					
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+							// Clear the existing timeout if it exists
+							if (typingAnimationTimeout) {
+								clearTimeout(typingAnimationTimeout);
+							}
+					
+							// Clear the existing text content
+							typingAnimationElement.innerHTML = '';
+					
+							// Loop through each character and add it to the element
+							for (let i = 0; i < text.length; i++) {
+								typingAnimationTimeout = setTimeout(() => {
+									typingAnimationElement.innerHTML += text[i];
+								}, i * 200); // Increase the delay to slow down the typing animation
+							}
+					
+							// Once the animation is complete, reset and start over
+							typingAnimationTimeout = setTimeout(() => {
+								playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+							}, text.length * 200);
+						}
+					
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+					</script>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="About">
+								<h2 class="major">About Me</h2>
+								<span class="image main"><img src="images/willie.jpg" alt="" loading="lazy" decoding="async" /></span>
+								<p>Technology has the greatest impact when it enables business growth, strengthens resilience, and creates better customer experiences. Over the past 15 years, I have built my career at the intersection of technology, cybersecurity, governance, and business strategy, helping organizations leverage technology to drive sustainable growth and operational excellence in the financial services sector.
+
+									<p>My experience spans enterprise technology strategy, digital transformation, cybersecurity, IT governance, business continuity, data analytics, and project leadership. I have worked closely with executive leadership teams, boards, regulators, and technology partners to align technology investments with organizational objectives, 
+										manage risk, improve operational efficiency, and support long-term business success. I am particularly passionate about translating complex technology challenges into practical solutions that deliver measurable business value.</p>
+
+									<p>As Head of Information Technology at VisionFund Ghana, I lead technology strategy and transformation initiatives that support business growth, regulatory compliance, and customer service delivery. Some of my key accomplishments include leading the successful migration of Temenos Transact across 28 branches. I have also championed digital solutions that enhance financial inclusion, improve operational effectiveness, and strengthen organizational resilience.</p>
+
+									<P>Beyond technology delivery, I am committed to developing high-performing teams, fostering a culture of continuous improvement, and helping organizations navigate change with confidence. I believe successful technology leadership is not just about systems and infrastructure—it is about empowering people, enabling innovation, and creating lasting business impact.</p>
+
+									<strong>Areas of expertise include:</strong>
+									<P>✅Technology Strategy & Governance</br>
+									✅Digital Transformation</br>
+									✅Cybersecurity & Information Security</br>
+									✅Project & Program Management (PMP®)</br>
+									✅Data Analytics & Business Intelligence</br>
+									✅Business Continuity & Disaster Recovery</br>
+									✅Enterprise Infrastructure & Cloud Technologies</P>
+
+									<p>I enjoy connecting with technology leaders, business executives, recruiters, and professionals who are passionate about digital transformation, cybersecurity, technology governance, and innovation-driven growth.</p>
+								
+										<h2 class="major">My Professional Certifications</h2>
+										<!-- Row 1 -->
+										<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+											<!-- Column 1 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/pbi.jpg" alt="Power BI Certification" loading="lazy" decoding="async" /></span>
+												<strong>Power BI Data Analytics<br></strong>
+											</div>
+											
+											<!-- Column 2 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/mother.jpg" alt="Another Certification" loading="lazy" decoding="async" /></span>
+												<strong>Excel: Mother of Business Interlligence<br></strong>
+											</div>
+											
+											<!-- Column 3 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/BA.jpg" alt="Business Analysis Certification" loading="lazy" decoding="async" /></span>
+												<strong>Business Analysis Certification<br></strong>
+											</div>
+										</div>
+									
+										<!-- Row 2 -->
+										<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+											<!-- Column 1 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/google.jpg" alt="Certification Example" loading="lazy" decoding="async" /></span>
+												<strong>Google Data Analyst<br></strong>
+											</div>
+											
+											<!-- Column 2 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/IBM.jpg" alt="Certification Example" loading="lazy" decoding="async" /></span>
+												<strong>IBM Data Analyst<br></strong>
+											</div>
+											<!-- Column 3 -->
+											<div class="card">
+
+												<span class="image main"><img src="images/cert/oracle.jpg" alt="Certification Example" loading="lazy" decoding="async" /></span>
+												<strong>Oracle Certified Certification<br></strong>
+											</div>
+										</div>
+
+										<!-- Row 3 -->
+										<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+											<!-- Column 1 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/google.jpg" alt="Certification Example" loading="lazy" decoding="async" /></span>
+												<strong>Google Data Analyst<br></strong>
+											</div>
+											
+											<!-- Column 2 -->
+											<div class="card">
+												
+												<span class="image main"><img src="images/cert/IBM.jpg" alt="Certification Example" loading="lazy" decoding="async" /></span>
+												<strong>IBM Data Analyst<br></strong>
+											</div>
+											<!-- Column 3 -->
+											<div class="card">
+
+												<span class="image main"><img src="images/cert/oracle.jpg" alt="Certification Example" loading="lazy" decoding="async" /></span>
+												<strong>Oracle Certified Certification<br></strong>
+											</div>
+										</div>
+								
+									<div style="text-align: center;">
+										<a href="#Resume" class="button scrol">View My Resume</a>
+									</div>
+							</article>
+
+						<!-- Resume -->
+							<article id="Resume">
+								<h2 class="major">Resume</h2>
+								<span class="image main"><img src="images/willie.jpg" alt="" loading="lazy" decoding="async" /></span>
+								<p>A seasoned technology professional with over a decade of experience and a diverse background 
+									spanning Data Science, Data Analytics, Machine Learning, Network Security and System Administration. 
+									I have a passion for leveraging data to drive business growth and innovation, and a vision to 
+									empower organizations with data-driven decision-making</p>
+									
+									<h2 class="major" >Technical Skills</h2>
+									<div class="resume-columns">
+										<div class="column">
+											<p>Machine Learning<br>
+											Data Analysis<br>
+											Data Science<br>
+											</p>
+										</div>
+										<div class="column">
+											<p>SQL<br>
+												Python<br>
+												Statistical Modelling<br>
+												</p>
+										</div>
+										<div class="column">
+											<p>MS Excel<br>
+												Tableau<br>
+												MS Power BI<br>
+												</p>
+										</div>
+									</div>
+
+									<h2 class="major">Projects</h2>
+									<p><strong>1.	Business Insight 360 - Brick & mortar and e-commerce</strong></p>
+									<ul>
+										<li>Designed a multi-view dashboard in Power BI for 6 departments (sales, finance, supply chain, executive, marketing, and products) 
+											of AtliQ hardware to understand sales trends and facilitate data-driven decisions, which aimed to scale the business processes by 10%.</li>
+										<li>Imported 2 different data sources (MySQL, and Excel) with more than 1 million records and performed data modelling.</li>
+										<li>Optimized the report using DAX studio, which saved 30% of storage and improved performance by 10%.</li>
+									</ul>
+									<p><strong>2.	FoodHub Order Analysis using Python</strong></p>
+									<ul>
+										<li>Conducted a comprehensive analysis of customer orders through the online portal, leveraging Python, to extract actionable insights, culminating in a 10% boost in targeted marketing efficiency and a 15% surge in average order value.</li>
+									</ul>
+									<p><strong>3.	E-News Express</strong></p>
+									<ul>
+										<li>Spearheaded the evaluation of a new landing page using statistical analysis, A/B testing, and visualization techniques, driving a 20% uplift in subscriber acquisition.</li>
+									</ul>
+									<p><strong>4.	ReCell</strong></p>
+									<ul>
+										<li>•	Designed and deployed machine learning algorithms to craft a dynamic pricing strategy for used and refurbished devices, achieving a 25% escalation in revenue and elevating market competitiveness.</li>
+									</ul>
+
+									<h2 class="major">Professional Experience</h2>
+									<p><strong>1.	Head, Information Technology </strong></p>
+									<ul>
+										<li>Ascended from Network Administrator to IT Head, steering a five-member team and cross-functional initiatives to pinpoint and deploy cost-efficient tech solutions, amplifying operational efficiency by 40%.</li>
+										<li>Orchestrated the IT Department's operational and strategic planning, leading to the triumphant completion of five major projects and a 40% boost in departmental efficiency.</li>
+										<li>Revolutionized data visualization by integrating automated reporting dashboards, slashing manual data analysis efforts by 60% and fostering a culture of data-driven decision-making.</li>
+										<li>Developed and managed interactive dashboards using MS Power BI, delivering real-time business metrics that propelled a 30% rise in income and a 15% cut in operational expenses.</li>
+									</ul>
+									<p><strong>2.	Deputy Head, Technology & Projects </strong></p>
+									<ul>
+										<li>Engineered and refined advanced router and switch configurations, optimized network servers, and harnessed virtualization to enhance the firm's network efficiency by 20%.</li>
+										<li>Diagnosed and resolved hardware and software issues, instituting solutions that cut system outages by 15% and conserved approximately $50,000 annually by averting potential productivity losses.</li>
+									</ul>
+									<h2 class="major">Education & Certifications</h2>
+									<p><strong>Academic Qualifications </strong></p>
+										<ul>
+											<li>PGP in Data Science & Business Analytics | McCombs School of Business, University of Texas, USA.</li>
+											<li>Master Business Administration (MBA) | Accra Business School, Accra</li>
+											<li>BBA.  IT Security SMC University, Switzerland </li>
+										</ul>											
+										
+									<p><strong>Professional Certifications</strong></p>
+										<ul>
+											<li>PECB/ISO27001 Lead Implementer.</li>
+											<li>Oracle Cloud Infrastructure Certified Data Science Professional </li>
+											<li>Google Data Analytics  </li>
+											<li>IBM Data Analyst </li>
+											<li>Microsoft Certified Solutions Expert (MCSE) Server Infrastructure </li>
+											<li>CompTIA Security+ CE </li>
+											<li>Certified Professional Ethical Hacker C)PEH Mile2 </li>
+										</ul>											
+								
+									<div style="text-align: center;">
+									<a href="#Portfolio" class="button scrol">View My Portfolio Projects</a>
+									</div>						
+							</article>
+
+						<!-- Portfolio -->												
+							<article id="Portfolio">
+								<h2 class="major">My Portfolio</h2>
+								<!-- Row 1 -->
+								<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+									<!-- Project 1 -->
+									<div class="card-wide">
+										<span class="image main"><img src="images/bi-360.jpg" alt="Business Insight 360" loading="lazy" decoding="async" /></span>
+										<strong>Business Insight 360<br></strong>
+										<p>"ReneWind" is a company working on improving the machinery/processes involved in the 
+											production of wind energy using machine learning and has collected data of generator 
+											failure of wind turbines using sensors. </p>
+										
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/ReneWind" class="button scrolly">View Project</a>
+										</div>
+									</div>
+									
+									<!-- Project 2 -->
+									<div class="card-wide">
+										
+										<span class="image main"><img src="images/Sales.jpg" alt="EasyVisa" loading="lazy" decoding="async" /></span>
+										<strong>A Project on Ensemble Techniques<br></strong>
+										<p>Analyze the data of Visa applicants, build a predictive model to facilitate the process of visa approvals, and based on important factors that significantly influence the Visa status recommend a suitable profile for the applicants for whom the visa should be certified or denied.</p>
+										
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/EasyVisa/" class="button scrolly">View Project</a>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Row 2 -->
+								<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+									<!-- Project 3 -->
+									<div class="card-wide">
+										
+										<span class="image main"><img src="images/excel1.gif" alt="INN Hotels" loading="lazy" decoding="async" /></span>
+										<strong>Financial Statistics Dashboard<br></strong>
+											<p>Income Sources - Grand total of income and their breakdowns showing achievements percentage and highlights for most valuable source, Marketing strategies and operating profits.
+
+												Sales Process - Set of repeatable steps that a sales takes to take a prospective buyer from the earlier stage of awareness to closed sale.</p>
+										<strong>Skills & Tools Covered</strong><br>Excel</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/INN-Hotels" class="button scrolly">View Project</a>
+										</div>
+									</div>
+									
+									<!-- Project 4 -->
+									<div class="card-wide">
+										
+										<span class="image main"><img src="images/recell.jpg" alt="ReCell" loading="lazy" decoding="async" /></span>
+										<strong>Recell - Supervised Learning<br></strong>
+										<p>Analyze the used devices dataset, build a model which will help develop a dynamic pricing strategy for used and refurbished devices, and identify factors that significantly influence the price.</p>
+										<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (EDA), Linear Regression, Linear Regression assumptions, Business insights and recommendations</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/ReCell" class="button scrolly">View Project</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- Row 3 -->
+								<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 20px;">
+									<!-- Project 5 -->
+									<div class="card-wide">
+										
+										<span class="image main"><img src="images/news.png" alt="E-news Express" loading="lazy" decoding="async" /></span>
+										<strong>E-news Express<br></strong>
+										<p>This project used statistical analysis, A/B testing, and visualization to decide whether the new landing page of an online news portal (E-news Express) is effective enough to gather new subscribers or not. </p>
+										<strong>Skills & Tools Covered</strong><br>Hypothesis Testing, a/b testing, Data Visualization, Statistical Inference</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/E-news-Express" class="button scrolly">View Project</a>
+										</div>
+									</div>
+									<!-- Project 6 -->
+									<div class="card-wide">										
+										<span class="image main"><img src="images/food.jpg" alt="FoodHub Order" loading="lazy" decoding="async" /></span>
+										<strong>FoodHub Order<br></strong>
+										<p>The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to draw some actionable insights for the business. Suppose you are hired as a Data Scientist in this company and the Data Science team has shared some of the key questions that need to be answered. Perform the data analysis to find answers to these questions that will help the company to improve the business.</p>
+										<strong>Skills & Tools Covered</strong><br>Exploratory Data Analysis (Variable Identification, Univariate analysis, Bi-Variate analysis), Python</p>
+										<div style="text-align: center;">
+											<a href="https://github.com/Nkunim2023/FoodHub-Order-Analysis" class="button scrolly">View Project</a>								
+										
+										</div>
+
+									</div>
+
+								</div>
+							<div style="text-align: center;"><a href="#contact" class="button scrol">Interact With Live Dashboard!</a></div>
+							</article>
+			  
+						
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Live Interactive Dashboard</h2>
+
+								<!-- Embed Power BI -->
+									<div class="video-container">
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiOThiYzFjZmItYzc5YS00NTdjLTlkYjItNDEyY2FjZDgxNmZmIiwidCI6IjA0N2YyOWI3LThlYjQtNDE3Yy04OTkzLTEzNzkzNjRkMDM5YSJ9" title="Business Insights 360" loading="lazy" allowfullscreen></iframe>
+									</div>
+
+									<div class="video-container">
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiZjdiMmI3YWEtNDJhZC00MjNkLTgzMmItYzJmYzAyODg2MDY5IiwidCI6IjA0N2YyOWI3LThlYjQtNDE3Yy04OTkzLTEzNzkzNjRkMDM5YSJ9" title="Car Sales Dashboard" loading="lazy" allowfullscreen></iframe>
+									</div>
+
+									<div class="video-container">
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiMjlkMDE1ZDEtOTFlZS00ZmQ1LTg5ZmItNzY3YjhjNGRhNDYyIiwidCI6IjA0N2YyOWI3LThlYjQtNDE3Yy04OTkzLTEzNzkzNjRkMDM5YSJ9" title="Dashboard" loading="lazy" allowfullscreen></iframe>
+									</div>
+
+									<div class="video-container">
+										<iframe src="https://onedrive.live.com/embed?resid=ecbcab6c824acebc%214423&authkey=%21AOhrvlKqW2C0rtk&em=2&wdAllowInteractivity=True&wdHideSheetTabs=True&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True" title="Car Sales Dashboard" loading="lazy" allowfullscreen></iframe>
+									</div>
+
+									<div class="video-container">
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiMDhjZmUyNmEtNDhiNC00OGYxLTk5NjktZjI1OTM2NDVhMzk0IiwidCI6IjA0N2YyOWI3LThlYjQtNDE3Yy04OTkzLTEzNzkzNjRkMDM5YSJ9" title="Project Progress Dashboard" loading="lazy" allowfullscreen></iframe>
+									</div>
+
+															
+									<p><h3>Please get in Touch</h3></p>
+										<p>I am open to working with you on the Data Science, Data Analyst and Business Intelligence project, discussing a possible career opportunity.</p>
+									<section class="alt">
+										<h3>Address</h3>
+										<p> Accra Ghana<br />
+									</section>
+
+									<section>
+										<h3>Email</h3>
+										<p><a href="mailto:william.nkum@gmail.com">william.nkum@gmail.com</a></p>
+									</section>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+				<ul class="icons">
+					<P><li><a href="https://www.linkedin.com/in/william-nkum-b7709237/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+					<li><a href="https://github.com/Nkunim2023" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:william.nkum@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=233244577214&text=Hi" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+				</ul>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js" defer></script>
+			<script src="assets/js/browser.min.js" defer></script>
+			<script src="assets/js/breakpoints.min.js" defer></script>
+			<script src="assets/js/util.js" defer></script>
+			<script src="assets/js/main.js" defer></script>
+			
+		  
+		  
+		  
+
+	</body>
+</html>
